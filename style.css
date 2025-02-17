@@ -1,0 +1,133 @@
+body{
+  background-color: #7d7462;
+}
+h1,h2,h3{
+  font-family: "Kanit", sans-serif;
+  color: #F6EEE0;
+}
+ol,ul,p,td,label{
+  font-family: "Itim", cursive;
+  color: #DAC6A3
+ }
+ th {
+  background-color: #cccccc; /* เปลี่ยนสีพื้นหลัง */
+  color: #000000; /* เปลี่ยนสีตัวอักษร */
+}
+
+hr{background-color: black;
+  height: 5px;
+  width: 1200px
+}
+h2, h3 {
+  margin-bottom: 5px; /* ลดระยะห่างด้านล่าง */
+  margin-top: 0;      /* ลดระยะห่างด้านบน */
+  padding: 0;         /* ลบ padding ถ้ามี */
+}
+.wongni{
+  background-color: black;
+  height: 0;
+  width: 100;
+}
+.header{
+    /* เพิ่มความกวางของกรอบอัตโนมัติ
+    margin: 10px auto;
+    padding:10px ;
+    width: auto;
+    display: flex;
+    /* นำกล่องย่อยแรกชิดซ้าย และกล่องย่อยสุดท้ายชิดขวา */
+    /* justify-content: space-between; */
+    /* ทำให้กล่องยุตรงกลาง */
+    /* align-items: center; */
+    /* ทำให้กล่องไม่ล้นจอ */
+    /* flex-wrap:wrap ; */
+    /* background-color:#A2805D; */ 
+}
+
+.logoBox{
+  font-size: 20px;
+}
+.searchBox{
+
+}
+.menuBox li {
+    /* ทำให้เรียงเป็นแนวนอน */
+    display: inline;
+    /* ทำให้ติดกัน ด้านซ้าย */
+    margin-right: 10px; 
+}
+
+.menuBox a{
+ font-size: 20px;
+  /* ลบเส้นขีดด้านใต้ข้อง link */
+  text-decoration: none;
+}
+
+.topic{
+  display: inline;
+  text-align: center;
+}
+.content-container{
+    display: flex;
+    align-items: flex-start; 
+    gap: 10px; 
+}
+.imgmain{
+
+    margin-left: 200px ;
+    flex: 2
+}
+.ingredients {
+  flex: 1; /* ยังคงใช้ flex */
+  background-color: #7c5f41; /* สีพื้นหลังของ ingredients */
+  padding: 5px; /* เพิ่มระยะห่างภายใน */
+  margin-right: 300px; 
+  margin-left: 20px; /* เพิ่มระยะห่างจาก imgmain */
+  border-radius: 15px;
+  box-sizing: border-box; /* ทำให้ padding ไม่ล้นขอบ */
+}
+.setp{
+  margin-left: 200px;
+}
+.pic {
+  display: flex;               /* ใช้ Flexbox จัดการรูป */
+  justify-content: center;     /* จัดให้อยู่กึ่งกลางแนวนอน */
+  gap: 20px;                   /* เพิ่มระยะห่างระหว่างรูป */
+}
+.pic img {
+  width: 100%;                 /* รูปจะปรับตามความกว้างของกล่อง */
+  max-width: 500px;            /* เพิ่มความกว้างสูงสุดของรูป */
+  height: auto;                /* รักษาสัดส่วนของรูป */
+  margin-bottom: 10px;         /* เพิ่มระยะห่างระหว่างรูปกับข้อความ */
+}
+.pic p {
+  text-align: center;
+}
+
+/* **********************table*********************** */
+.table{
+  display: flex; /* ใช้ Flexbox */
+  justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+}
+table {
+  width: 50%; /* ทำให้ตารางกว้างเต็ม */
+  border-collapse: collapse; /* ลบเส้นแบ่งระหว่างเซลล์ */
+  margin: 20px ; /* เพิ่มระยะห่างระหว่างตารางกับเนื้อหาอื่น */
+}
+th, td {
+  border: 1px solid #ddd; /* เพิ่มเส้นขอบบาง ๆ */
+  padding: 10px; /* เพิ่มพื้นที่ในเซลล์ */
+  text-align: left; /* จัดข้อความชิดซ้าย */
+}
+th {
+  background-color: #f8f9fa; /* สีพื้นหลังสำหรับหัวตาราง */
+  font-weight: bold; /* ตัวหนา */
+}
+.commend{
+  display: flex;
+  flex-direction: column; /* เพื่อให้ฟอร์มแสดงในแนวตั้ง */
+  align-items: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+  justify-content: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  margin: 20px auto; /* เพิ่มระยะห่างด้านบนและล่าง */
+}
+

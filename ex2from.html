@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>แบบฟอร์มลงทะเบียนศิษย์เก่า IT&IS</h1>
+    <form action="https://www.example.com/"method= "get">
+      <label for="name">คำนำหน้า</label>
+      <select name="province">
+        <option value="84000">นาย</option>
+        <option value="83000">นางสาว</option>
+        <option value="82000">นาง</option>
+      </select>
+
+       
+      <label for="FirstName">ชื่อ</label>
+      <input type="text" name="FirstName" />
+
+      <label for="Lastname">สกุล</label>
+      <input type="text" name="Lastname" />
+
+      <br />
+      <label for="password">รหัสนักศึกษา</label>
+      <input type="password" name="password" />
+      <label for="gender">เพศ</label>
+      <input type="radio" name="gender" value="1" />ชาย
+      <input type="radio" name="gender" value="2" />หญิง
+      <input type="radio" name="gender" value="3" />LGBTQ+
+
+      <br />
+      <label for="birthday">วัน/เดือน/ปี</label>
+      <input type="text" name="birthday" placeholder="24/09/2004" />
+      <label for="Yesr">ปีการศึกษา</label>
+      <input type="text" name="Yesr" />
+      
+      <br />
+      <label for="address">ที่อยู่</label>
+      <input type="text" name="address" />
+      <label for="address">E-mail</label>
+      <input type="text" name="address" />
+      <label for="address">เบอร์โทรติดต่อ</label>
+      <input type="text" name="address" />
+
+      <br />
+       <label for="course">หลักสูตร</label>
+      <input type="radio" name="course" value="1" />IT (Information Technology)
+      <input type="radio" name="course" value="2" />IS (Bachelor of Science Program in Computer and Information Science)
+      
+      <br />
+     <label for="occupation">อาชีพในปัจจุบัน</label>
+      <input type="text" name="occupation" /> 
+      <label for="location">สถานที่ทำงาน</label>
+      <input type="text" name="location" placeholder="ระบุชื่อบริษัทและที่อยู่" />
+      <label for="name">ระบุประเภทงานที่ทำ</label>
+      <select name="Typework">
+        <option value="91000">Developer</option>
+        <option value="92000">SA</option>
+        <option value="93000">Graphic Design</option>
+        <option value="94000">Digital marketing</option>
+        <option value="95000">อื่นๆ</option>
+      </select>
+      <br>
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+
+    </form>
+  </body>
+</html>

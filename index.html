@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+        <!-- แถบบน -->
+        <nav class="flex flex-col md:flex-row justify-between items-center px-6 md:px-8 py-4 border-b sticky top-0 z-10 bg-sky-50">
+            <!-- Logo -->
+            <div class="text-2xl md:text-3xl font-bold text-purple-500"> 
+                <h1>MY Portfolio</h1>
+                <h2 class="text-sm md:text-lg">WEB PROGRAMMING</h2>
+            </div>
+            <!-- Menu -->
+            <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-gray-600 text-xs md:text-sm  mt-3 md:mt-0">
+                <li><a href="#home" class="hover:text-gray-900">HOME</a></li>
+                <li><a href="#about_me" class="hover:text-gray-900">ABOUT ME</a></li>
+                <li><a href="#exercises" class="hover:text-gray-900">MY EXERCISES</a></li>
+                <li><a href="#CONTACT" class="hover:text-gray-900">CONTACT</a></li>
+            </ul>
+        </nav>
+<!-- *********************************************************************************************************************** -->
+        <div class="relative">
+            <img id="home" class="w-full h-[300px] md:h-[600px] object-cover" src="img/pic2.jpg" alt="">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+                <div class="bg-white bg-opacity-30 backdrop-blur-sm p-4 md:p-6 rounded-lg shadow-lg">
+                    <h1 class="text-2xl md:text-4xl font-semibold text-black">Hi, I'm</h1>
+                    <h1 class="text-2xl md:text-4xl mt-2 md:mt-4 font-semibold text-black">Nattanon Sukmetta</h1>
+                    <h2 class="text-lg md:text-3xl mt-2 md:mt-4 text-black">Information Technology</h2>
+                    <h1 class="text-sm md:text-xl text-black mt-2 md:mt-4">Prince of Songkla University Surat Thani Campus</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- *****************************************************ABOUT*************************************************************-->
+        <div>
+            <h1 id="about_me" class="text-center text-2xl md:text-3xl mt-8 md:mt-10 mb-6 md:mb-10">ABOUT ME</h1>
+            <hr>
+        </div>
+        <div class="max-w-6xl mx-auto bg-white p-6 md:p-10 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-800">
+                    I am a second-year student studying in the Information Technology program.
+                </h2>
+                <p class="text-lg md:text-2xl font-semibold text-gray-700 mt-2">
+                   I am currently studying at Prince of Songkla University, Surat Thani Campus. This project is a website development and design project for the WEB PROGRAMMING course.
+                </p>
+                <p class="text-sm md:text-lg text-gray-500 mt-4 leading-relaxed">
+                    Hello, my name is Natthanon Sukmetta, but you can call me Bas. I enjoy thinking creatively and designing, just like this project. Even though it requires a lot of thinking, I put my heart into creating it with dedication.
+
+                    I also love participating in activities because they allow me to collaborate and work with different kinds of people, which brings me great joy.
+    
+                    If you join university, you shouldn’t focus only on studying. You should also take part in activities and meet new people—it will help you make the most out of your university life! :D
+                </p>
+                <hr class="my-6 border-gray-300">
+            </div>
+
+            <div class="flex justify-center">
+                <img src="img/pic6.jpg" alt="Profile Picture" class="w-[250px] md:w-[500px] h-[500px] md:h-[250] shadow-lg object-cover">
+            </div>
+        </div>
+<!-- ***************************************************exercises************************************************************* -->
+        <div class="bg-[#f9fbfd] ">
+            <h1 id="exercises" class=" text-center text-2xl md:text-3xl pt-6 md:pt-10 mb-6 md:mb-10">MY PORTFOLIO</h1>
+            <hr>
+
+      <div class="grid lg:grid-cols-3 md:grid-cols-1 p-6 md:p-10 place-items-center">
+            <div>
+                <a href="ex1menu.html" class="block w-64 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 active:scale-95 hover:scale-110 mt-14">
+                 <img src="https://cdn.prod.website-files.com/60ef088dd8fef99352abb434/650d715703204e7241295dea_html%20codes%20list.webp" 
+                      class="w-full h-56 object-cover">
+                 <div class="p-4 text-center bg-[#FAF3E0]">
+                     <p class="text-sm font-semibold text-gray-900">เมนูอาหาร (basic html)</p>
+                 </div>
+                 </a>
+               </div> 
+
+                  
+      <div>
+        <a href="ex2from.html" class="block w-64 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 active:scale-95 hover:scale-110 mt-14">
+         <img src="https://png.pngtree.com/png-vector/20220615/ourmid/pngtree-papers-and-documents-set-png-image_5085824.png" 
+              class="w-full h-56 object-cover">
+         <div class="p-4 text-center bg-[#FAF3E0]">
+             <p class="text-sm font-semibold text-gray-900">ฟอร์มศิษย์เก่า (Form)</p>
+         </div>
+         </a>
+       </div> 
+
+       <div>
+        <a href="box__model.html" class="block w-64 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 active:scale-95 hover:scale-110 mt-14">
+         <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png" 
+              class="w-full h-56 object-cover">
+         <div class="p-4 text-center bg-[#FAF3E0]">
+             <p class="text-sm font-semibold text-gray-900">ร้านอุปกรณ์ดนตรี (Box Model)</p>
+         </div>
+         </a>
+       </div> 
+    </div>
+
+  <div class="grid lg:grid-cols-2  md:grid-cols-1 place-items-center">
+    <div>
+        <a href="menu-css-ver2.html" class="block w-64 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 active:scale-95 hover:scale-110 mt-14">
+         <img src="https://f.ptcdn.info/660/043/000/o8z1gzfpvYnwyCFxWhx-o.jpg" 
+              class="w-full h-56 object-cover">
+         <div class="p-4 text-center bg-[#FAF3E0]">
+             <p class="text-sm font-semibold text-gray-900">เมนูอาหารสวยงาม (Page layout)</p>
+         </div>
+         </a>
+       </div> 
+
+       <div>
+        <a href="login.html" class="block w-64 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 active:scale-95 hover:scale-110 mt-14">
+         <img src="https://png.pngtree.com/png-vector/20191003/ourmid/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg" 
+              class="w-full h-56 object-cover">
+         <div class="p-4 text-center bg-[#FAF3E0]">
+             <p class="text-sm font-semibold text-gray-900">Exercise JavaScript: Form Validation</p>
+         </div>
+         </a>
+       </div> 
+        </div>
+    </div>
+
+<!-- *******************************************CONTACT************************************************** -->
+        <div class="bg-sky-100 p-6 md:p-10 mt-5">
+            <h2 id="CONTACT" class="text-center text-2xl md:text-3xl py-5">CONTACT ME</h2>
+            <hr class="border-gray-400">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 md:mt-10 px-4 md:px-40 place-items-center">
+                <!-- Form -->
+                <div class="space-y-4 w-full">
+                    <input class="w-full h-9 px-2 border border-gray-300" type="text" name="name" placeholder="Name*">
+                    <input class="w-full h-9 px-2 border border-gray-300" type="text" name="email" placeholder="Email*">
+                    <input class="w-full h-9 px-2 border border-gray-300" type="text" name="subject" placeholder="Subject">
+                    <textarea class="w-full px-2 border border-gray-300" name="message" placeholder="Message" rows="4"></textarea>
+                </div>
+                <!-- ข้อมูลติดต่อ -->
+                <div class="space-y-4 text-center md:text-left">
+                    <div>
+                        <h2 class="text-xl ">Nattanon Sukmetta</h2>
+                        <h2 class="text-gray-600">Information Technology</h2>
+                    </div>
+                    <div>
+                        <h2 class="text-lg ">Phone</h2>
+                        <h2 class="text-gray-600">098-486-7749</h2>
+                    </div>
+                    <div>
+                        <h2 class="text-lg ">Email</h2>
+                        <h2 class="text-gray-600">bbassab.x@gmail.com</h2>
+                    </div>
+                    <div>
+                        <h2 class="text-lg ">Instagram</h2>
+                        <h2 class="text-gray-600">Nsx_bbas1</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" bg-white"> 
+            <h1 class="text-lg text-center p-1 text-gray-400">  @2025 Nattanon Sukmetta </h1>
+        </div>
+    </div>
+</body>
+</html>
